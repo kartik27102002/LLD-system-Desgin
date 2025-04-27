@@ -1,0 +1,25 @@
+Single Responsibility Principle (SRP)
+One class should have only one reason to change.
+
+ Open/Closed Principle (OCP)
+Classes should be open for extension, closed for modification.
+
+Liskov Substitution Principle (LSP)
+Subtypes must be substitutable for their base types.
+
+Interface Segregation Principle (ISP)
+Don't force a class to implement unnecessary methods.
+
+ Dependency Inversion Principle (DIP)
+High-level modules shouldn't depend on low-level modules.
+Both should depend on abstractions.
+
+
+
+
+📚 Recap:
+✅ SRP: Separate classes for saving, invoicing, paying
+✅ OCP: Easily add new payment types
+✅ LSP: All PaymentProcessors behave correctly
+✅ ISP: Small, focused interfaces
+✅ DIP: High-level code depends on abstractions
