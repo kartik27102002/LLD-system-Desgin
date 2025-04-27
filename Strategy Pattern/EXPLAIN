@@ -1,0 +1,44 @@
+Definition:
+
+Strategy Pattern is a behavioral design pattern that allows selecting an algorithm’s behavior at runtime.
+
+✅ You define a family of algorithms,
+✅ Put each of them in a separate class,
+✅ And make their objects interchangeable.
+
+🎯 Why do we need Strategy Pattern?
+✅ Avoid if-else mess
+✅ Add new behavior without touching old code (Open/Closed Principle)
+✅ Make system flexible and pluggable
+✅ Choose behavior during runtime
+
+🎯 How Strategy Pattern works (flow)
+✅ Create Strategy Interface → Common behavior
+✅ Create Concrete Strategy classes → Different versions
+✅ Context Class → Uses/accepts the strategy
+
+
+
+            <<interface>>
+            +-----------------+
+            |   SortStrategy   |
+            |-----------------|
+            | + sort(arr[])    |
+            +-----------------+
+                    ▲
+       ┌────────────┼────────────┐
+       │            │            │
++--------------+ +-------------+ +-------------+
+| BubbleSort   | | QuickSort    | | MergeSort    |
+|--------------| |-------------| |-------------|
+| + sort(arr[])| | + sort(arr[])| | + sort(arr[])|
++--------------+ +-------------+ +-------------+
+
+             ▲
+             │
+     +----------------+
+     |  SortContext    |
+     |-----------------|
+     | - sortStrategy  |
+     | + sortArray(arr[])  |
+     +-----------------+
