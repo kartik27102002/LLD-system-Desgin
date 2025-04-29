@@ -1,0 +1,17 @@
+🎨 Decorator Pattern (Structural Design Pattern)
+The Decorator Pattern allows you to dynamically add behavior to an object without modifying its original structure.
+It helps you extend functionality by wrapping objects with additional decorators.
+
+
+🧩 Key Components:
+🧱 Component:
+Defines the interface for objects that can have responsibilities added to them dynamically.
+
+🏗️ ConcreteComponent:
+Implements the Component interface and defines the base behavior.
+
+🎁 Decorator:
+An abstract class that also implements the Component interface and holds a reference to a Component object.
+
+✨ ConcreteDecorator:
+Adds extra responsibilities or behaviors to the component by extending the Decorator class.
